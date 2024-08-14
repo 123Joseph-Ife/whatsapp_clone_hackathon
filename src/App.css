@@ -1,0 +1,124 @@
+#root {
+  width: 100%;
+}
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+}
+.App aside {
+  width: 30%;
+  height: 100svh;
+  background-color: #111b21;
+  overflow-y: scroll;
+  padding: 20px;
+}
+.App aside h2 {
+  text-align: center;
+  border-bottom: 2px solid #202c33;
+  padding-bottom: 20px;
+}
+.App main {
+  width: 70%;
+  height: 100svh;
+  background-color: #0b141a;
+}
+.users {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* padding: 20px; */
+}
+.user {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 20px;
+  height: 80px;
+  border-bottom: 2px solid #0b141a;
+  width: 100%;
+}
+.user:hover {
+  background-color: #2a3942;
+}
+.user img {
+  width: 50px;
+}
+.user .txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.App main {
+  padding: 30px;
+  overflow-y: scroll;
+  padding-bottom: 100px;
+}
+main .message-header {
+  border-bottom: 2px solid #202c33;
+  padding-bottom: 20px;
+}
+main .message-header h2 {
+  text-align: center;
+}
+main form {
+  width: 70%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  background-color: #202c33;
+}
+main form input {
+  width: 100%;
+  padding: 10px;
+}
+.messages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 20px;
+  padding-top: 20px;
+}
+.message {
+  padding: 20px;
+  background-color: #202c33;
+  max-width: 500px;
+  border-radius: 20px;
+}
+.message.opposite {
+  display: flex;
+  align-self: flex-start;
+}
+.message.you {
+  display: flex;
+  align-self: flex-end;
+}
+.first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  .App aside {
+    width: 40%;
+  }
+  .App main {
+    width: 60%;
+  }
+  main form {
+    width: 60%;
+  }
+}
